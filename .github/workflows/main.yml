@@ -14,5 +14,8 @@ jobs:
          Invoke-WebRequest -Uri "https://raw.githubusercontent.com/rudranshgoel1/windows2/main/down.bat" -OutFile "down.bat"
          cmd /c down.bat
 
+      - name: Run Script
+        run: python chrome.py
+        
       - name: Time Counter
         run: cmd /c loop.bat
