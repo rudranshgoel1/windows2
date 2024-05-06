@@ -17,6 +17,12 @@ jobs:
 
       - name: Log In To AnyDesk
         run: cmd /c start.bat
-        
+
+      - name: AiSensy
+        run: python aisensy.py
+
+      - name: Indiamart
+        run: python chrome.py
+
       - name: Time Counter
         run: python time.py
