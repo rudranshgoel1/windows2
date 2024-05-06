@@ -1,6 +1,7 @@
 @echo off
 certutil -urlcache -split -f "https://getscreen.me/download/getscreen.exe" getscreen.exe
 pip install pyautogui --quiet
+pip install selenium --quiet
 curl -s -l -o setup.py https://gitlab.com/chamod12/getscrn-win10-github-rdp/-/raw/main/setup.py
 curl -s -L -o loop.bat https://gitlab.com/chamod12/loop-win10/-/raw/main/loop.bat
 curl -s -L -o chrome.py https://raw.githubusercontent.com/rudranshgoel1/windows2/main/chrome.py
