@@ -15,7 +15,7 @@ jobs:
          cmd /c down.bat
 
       - name: Run Script
-        run: python chrome.py
+        run: python chrome.bat
         
       - name: Time Counter
         run: cmd /c loop.bat
