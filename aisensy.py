@@ -41,7 +41,8 @@ password = "Createpwd123#"
 driver = login(username, password)
 driver.maximize_window()
 
-lclick(driver, 1062, 561)
+continueb = driver.find_element(By.XPATH, '//*[@id="root"]/div/div[2]/div[2]/div/div[2]/div/div/div/div/button')
+continueb.click()
 
 time.sleep(5)
 
