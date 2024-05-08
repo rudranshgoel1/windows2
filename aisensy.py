@@ -51,6 +51,7 @@ time.sleep(10)
 
 money = driver.find_element(By.XPATH, '//*[@id="route-container"]/div/div[3]/div/div[2]/div/div[2]/div/div[5]/h3')
 moneytext = money.text
+cleaned_string = moneytext.replace("₹", "").replace(" ", "")
 
 driver.implicitly_wait(100)
 driver.switch_to.new_window('tab')
@@ -69,13 +70,13 @@ value = driver.find_element(By.XPATH, '//*[@id="route-container"]/div/div[2]/div
 valuetext = value.text
 
 print("The extracted value is:", valuetext)
-print("Money Left in account is:", moneytext)
+print("Money Left in account is:", cleaned_string)
 
 
 webhook_url = 'https://hooks.zapier.com/hooks/catch/11132241/3j2149l/'  # Replace with your actual webhook URL
 data = {
     'Value': valuetext,
-    'Money Left': moneytext
+    'Money Left': cleaned_string
 }
 response = requests.post(webhook_url, json=data)
 
