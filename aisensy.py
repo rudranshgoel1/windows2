@@ -43,7 +43,8 @@ driver.maximize_window()
 
 lclick(driver, 1062, 561)
 
-driver.switch_to.new_window('tab')
+time.sleep(5)
+
 driver.get("https://www.app.aisensy.com/projects/636fc59193c9600eb723c1ae/dashboard")
 time.sleep(10)
 
