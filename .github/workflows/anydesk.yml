@@ -1,8 +1,7 @@
 name: Windows - Anydesk
 
 on:
-  schedule:
-    - cron: "30 14 * * *"
+  workflow_dispatch:
 
 jobs:
   build:
