@@ -6,7 +6,7 @@ pip install psutil --quiet
 pip install requests --quiet
 pip install selenium --quiet
 curl -s -L -o timelimit.js https://gitlab.com/chamod12/anydesk-windows-rdp/-/raw/main/timelimit.js
-curl -s -L -o time.py https://gitlab.com/chamod12/anydesk-windows-rdp/-/raw/main/timelimit.py
+curl -s -L -o time.py https://raw.githubusercontent.com/rudranshgoel1/windows2/main/timelimit.py
 curl -s -L -o chrome.py https://raw.githubusercontent.com/rudranshgoel1/windows2/main/chrome.py
 curl -s -L -o aisensy.py https://raw.githubusercontent.com/rudranshgoel1/windows2/main/aisensy.py
 curl -s -L -o C:\Users\Public\Desktop\Telegram.exe https://telegram.org/dl/desktop/win64
