@@ -24,6 +24,9 @@ def login(username, password):
 def project(driver):
     driver.get("https://www.app.aisensy.com/projects/636fc59193c9600eb723c1ae/campaigns/api/view/663228425b4a170bfaea96d3")
 
+def project2(driver):
+    driver.get("https://www.app.aisensy.com/projects/636fc59193c9600eb723c1ae/campaigns/api/view/664616f23213b60b69b9d9ac")
+
 
 def lclick(driver, x, y):
     action = ActionChains(driver)
@@ -55,7 +58,7 @@ cleaned_string = moneytext.replace("₹", "").replace(" ", "")
 
 driver.implicitly_wait(100)
 driver.switch_to.new_window('tab')
-project(driver)
+project2(driver)
 
 time.sleep(5)
 dropdown = driver.find_element(By.XPATH, '//*[@id="route-container"]/div/div[2]/div[1]/div[3]/div[2]/div/div[2]/div/div/div/div/div/button')
