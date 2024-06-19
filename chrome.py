@@ -45,6 +45,10 @@ def cature(driver):
 def vd(driver):
     driver.get("https://app.whatsupleads.com/users/view/662105850d40a")
     driver.refresh()
+
+def zuliminan(driver):
+    driver.get("https://app.whatsupleads.com/users/view/666d5809bcec0")
+    driver.refresh()
         
 def click_at_location2(driver, x, y):
     action = ActionChains(driver)
@@ -78,6 +82,11 @@ number_element = driver.find_element(By.CLASS_NAME, "fw-9.fs-30.text-success.d-f
 slimlinenum = number_element.text
 
 admin(driver)
+zuliminan(driver)
+number_element = driver.find_element(By.CLASS_NAME, "fw-9.fs-30.text-success.d-flex")
+zuliminannum = number_element.text
+
+admin(driver)
 vd(driver)
 number_element = driver.find_element(By.CLASS_NAME, "fw-9.fs-30.text-success.d-flex")
 vdnum = number_element.text
@@ -88,7 +97,8 @@ data = {
     'Himanshu Industries': himanshunum,
     'Sunlight HARDWARE': slimlinenum,
     'Cature (Abhay Jain)': caturenum,
-    'VD International': vdnum
+    'VD International': vdnum,
+    'Zuliminans Wardrobe': zuliminannum
 }
 response = requests.post(webhook_url, json=data)
 
