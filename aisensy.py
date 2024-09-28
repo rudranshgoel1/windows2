@@ -76,7 +76,7 @@ print("The extracted value is:", valuetext)
 print("Money Left in account is:", cleaned_string)
 
 
-webhook_url = 'https://hooks.zapier.com/hooks/catch/11132241/3j2149l/'  # Replace with your actual webhook URL
+webhook_url = 'https://hook.eu2.make.com/2y4xytxx0nj560xyf2y8n5rfwidfcfp8'  # Replace with your actual webhook URL
 data = {
     'Value': valuetext,
     'Money Left': cleaned_string
